@@ -1,0 +1,32 @@
+$black: #060606;
+$white: #F9F9F9;
+$grey: #242424;
+$orange: #F9331B;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ABC Monument Grotesk Unlicensed Trial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1856px;
+    padding: 16px;
+}
+
+.desktop-only {
+    display: none;
+
+    @include media(lg) {
+        display: inherit;
+    }
+}
+
+.mobile-only {
+    @include media(lg) {
+        display: none;
+    }
+}

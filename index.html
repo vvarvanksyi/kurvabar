@@ -3,9 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kurvabar</title>
+    <title>Kurva.bar</title>
     <link rel="stylesheet" href="./scss/reset.scss" />
     <link rel="stylesheet" href="./scss/style.scss" />
   </head>
-  <body></body>
+  <body>
+    <section class="first-screen">
+      <header class="navigation container">
+        <div class="navigation-wrapper">
+          <a href="/" class="navigation__company">
+            <img src="./img/logo-mb.svg" alt="company" />
+          </a>
+
+          <ul class="desktop-nav desktop-only">
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Коктейлі</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Івенти</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Про нас</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Контакти</a>
+            </li>
+          </ul>
+
+          <figure class="desktop-nav__shopping-cart desktop-only">
+            <svg
+              id="shopping-cart"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12.6667H6.66667V14H6V14.6667H4.66667V14H4V12.6667H4.66667V12H6V12.6667Z"
+                fill="white"
+              />
+              <path
+                d="M13.3333 12.6667H14V14H13.3333V14.6667H12V14H11.3333V12.6667H12V12H13.3333V12.6667Z"
+                fill="white"
+              />
+              <path
+                d="M2.66667 2V1.33334H0.666672V2.66667H2.66667V4.66667H3.33334V8H4.00001V10.6667H4.66667V11.3333H13.3333V10H5.33334V8.66667H13.3333V8H14V6H14.6667V4H15.3333V2H2.66667ZM13.3333 4V6H12.6667V7.33334H4.66667V4.66667H4.00001V3.33334H14V4H13.3333Z"
+                fill="white"
+              />
+            </svg>
+            <span class="navigation__shopping-cart__counter">0</span>
+          </figure>
+
+          <a href="#" class="navigation__book-btn desktop-only"
+            >Забронювати стіл</a
+          >
+
+          <div class="navigation-menu">
+            <figure class="navigation__shopping-cart">
+              <svg
+                id="shopping-cart"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12.6667H6.66667V14H6V14.6667H4.66667V14H4V12.6667H4.66667V12H6V12.6667Z"
+                  fill="white"
+                />
+                <path
+                  d="M13.3333 12.6667H14V14H13.3333V14.6667H12V14H11.3333V12.6667H12V12H13.3333V12.6667Z"
+                  fill="white"
+                />
+                <path
+                  d="M2.66667 2V1.33334H0.666672V2.66667H2.66667V4.66667H3.33334V8H4.00001V10.6667H4.66667V11.3333H13.3333V10H5.33334V8.66667H13.3333V8H14V6H14.6667V4H15.3333V2H2.66667ZM13.3333 4V6H12.6667V7.33334H4.66667V4.66667H4.00001V3.33334H14V4H13.3333Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="navigation__shopping-cart__counter">0</span>
+            </figure>
+            <details class="menu-dropdown">
+              <summary class="burger">
+                <p class="burger-label"></p>
+              </summary>
+              <div id="nav">
+                <menu class="navigation-list">
+                  <li class="navigation-list__item">
+                    <a a href="#" class="navigation-list__link">Коктейлі</a>
+                  </li>
+                  <li class="navigation-list__item">
+                    <a href="#" class="navigation-list__link">Івенти</a>
+                  </li>
+                  <li class="navigation-list__item">
+                    <a href="#" class="navigation-list__link">Про нас</a>
+                  </li>
+                  <li class="navigation-list__item">
+                    <a href="#" class="navigation-list__link">Контакти</a>
+                  </li>
+                </menu>
+                <div class="navigation-img">
+                  <img src="./img/navbar-img.png" alt="Русалка" />
+                </div>
+                <div class="navigation-footer">
+                  <div class="navigation-footer__item">
+                    <a href="#" class="navigation__link">kurvagym@gmail.com</a>
+                    <a href="#" class="navigation__link">instagram</a>
+                  </div>
+                  <img src="./img/logo-navbar-open.svg" alt="Великий логотип" />
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Бар,<br />де кожен<br />ковток <br />має сенс
+          </h1>
+          <p class="hero__description">
+            вул. Велика <br />Васильківська, 45, Київ
+          </p>
+        </div>
+        <a href="#" class="hero-btn--primary"
+          ><span>Забронювати стіл</span>
+          <img
+            class="hero__btn-icon"
+            src="./icons/Phone Ringing Low.svg"
+            alt="Іконка запису"
+            aria-hidden="true"
+            width="16"
+            height="16"
+          />
+        </a>
+      </section>
+    </section>
+  </body>
 </html>

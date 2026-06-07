@@ -1,0 +1,36 @@
+@mixin flex ($align-items: initial, $justify-content: initial, $flex-direction: initial) {
+    display: flex;
+    @if ($align-items != initial) {
+        align-items: $align-items;
+    }
+    @if ($justify-content != initial) {
+        justify-content: $justify-content;
+    }
+    @if ($flex-direction != initial) {
+        flex-direction: $flex-direction;
+    }
+}
+
+$breakpoints : (
+    xs: 376px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1280px
+);
+
+@mixin media ($breakpoint, $direction : min) {
+    $resolution: map-get($breakpoints, $breakpoint);
+
+    @if ($direction == min ) {
+        @media (min-width: #{$resolution}){
+            @content;
+        }
+    }
+
+    @if ($direction == max) {
+        @media (max-width : #{$resolution}) { 
+            @content;
+        }
+    }
+}
