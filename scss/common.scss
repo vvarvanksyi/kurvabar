@@ -1,7 +1,7 @@
 $black: #060606;
 $white: #F9F9F9;
 $grey: #242424;
-$orange: #F9331B;
+$orange: #8F4455;
 
 * {
     box-sizing: border-box;
@@ -14,7 +14,11 @@ body {
 .container {
     width: 100%;
     max-width: 1856px;
-    padding: 16px;
+    padding: 0 16px;
+
+    @include media (xl) {
+        padding: 0 32px;
+    }
 }
 
 .desktop-only {

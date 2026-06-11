@@ -1,0 +1,15 @@
+.section {
+    &-title {
+        font-family: 'GaramondBookNarrowCTT';
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 0.96;
+        letter-spacing: -0.02;
+        color: $white;
+        text-transform: uppercase;
+
+        @include media (xl) {
+            font-size: 96px;
+        }
+    }
+}
